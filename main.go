@@ -47,6 +47,11 @@ func main() {
 
 	fmt.Println("sum : ",sum(1,2))
 
+	//call by reference 
+	y:=10;
+	z:=20;
+	fmt.Println("substraction is : ",minus(&y,&z));
+
 }
 
 
@@ -54,3 +59,7 @@ func sum(a int , b int) int {
      
 	return a+b
 }
+
+func minus(a *int , b *int) int {			
+
+	return *a-*b}
