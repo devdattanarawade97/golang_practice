@@ -31,4 +31,26 @@ func main() {
 	const i int =10
 	fmt.Println("constant value",i);
 
+	var e int=10;
+	fmt.Println(e==c);
+
+	 f :=30;
+	fmt.Println(f)
+
+	 x:=1;
+
+	for x<10 {
+		fmt.Println(x)
+		x++
+	}
+
+
+	fmt.Println("sum : ",sum(1,2))
+
+}
+
+
+func sum(a int , b int) int {
+     
+	return a+b
 }
