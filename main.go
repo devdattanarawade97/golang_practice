@@ -4,6 +4,12 @@ import (
 	"fmt"	
 )		
 
+//closure function
+func closure_function() int {
+
+	return 10
+}
+
 
 func main() {
 	name:= "Hello, World!"	
@@ -51,8 +57,21 @@ func main() {
 	y:=10;
 	z:=20;
 	fmt.Println("substraction is : ",minus(&y,&z));
+   
+	//call anoymous function
+//anynoumous function
+anoynomous_function:=func() {
+	fmt.Println("anonymous function")
+	
+ }
+
+anoynomous_function()
+
+//call closure function
+fmt.Println("closure function",closure_function())
 
 }
+
 
 
 func sum(a int , b int) int {
