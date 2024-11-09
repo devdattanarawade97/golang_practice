@@ -70,9 +70,9 @@ anoynomous_function:=func() {
 
 anoynomous_function()
 
-variable:=closure_function();
+
 //call closure function
-fmt.Println("closure function",variable)
+fmt.Println("closure function",closure_function()())
 
 }
 
