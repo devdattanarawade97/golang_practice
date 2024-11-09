@@ -14,6 +14,11 @@ func closure_function() func() int {
 }
 
 
+func defer_function() {
+	fmt.Println("defer function")
+}
+
+
 func main() {
 	name:= "Hello, World!"	
     
@@ -74,6 +79,10 @@ anoynomous_function()
 //call closure function
 fmt.Println("closure function",closure_function()())
 
+fmt.Println("before defer function")
+//defer function	
+defer defer_function()
+fmt.Println("defer function end")
 }
 
 
