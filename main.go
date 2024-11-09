@@ -78,13 +78,26 @@ anoynomous_function()
 
 //call closure function
 fmt.Println("closure function",closure_function()())
-
 fmt.Println("before defer function")
 //defer function	
 defer defer_function()
 fmt.Println("defer function end")
+
+
+//call list function
+fmt.Println("list function",list_function(1,2,3,4,5,6))
+
+
 }
 
+//argument list function
+func list_function(arg...int) int {
+	sum:=0;
+	for _,v:=range arg {
+		sum+=v
+	}
+	return sum
+}
 
 
 func sum(a int , b int) int {
