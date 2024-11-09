@@ -5,9 +5,12 @@ import (
 )		
 
 //closure function
-func closure_function() int {
-
-	return 10
+func closure_function() func() int {
+     a:=10;
+	return func () int {
+		a++;
+		return a;
+	}
 }
 
 
@@ -67,8 +70,9 @@ anoynomous_function:=func() {
 
 anoynomous_function()
 
+variable:=closure_function();
 //call closure function
-fmt.Println("closure function",closure_function())
+fmt.Println("closure function",variable)
 
 }
 
