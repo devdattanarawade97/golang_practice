@@ -88,7 +88,13 @@ fmt.Println("defer function end")
 fmt.Println("list function",list_function(1,2,3,4,5,6))
 
 
+//array 
+var arr [5]int=[5]int{1,2,3,4,5};
+fmt.Println("array value",arr)
 
+//elipsis 
+var elipsis_arr =[...]int{1,2,3,4,5};
+fmt.Println("elipsis array value",elipsis_arr)
 }
 
 //argument list function
