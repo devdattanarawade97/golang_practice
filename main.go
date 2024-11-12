@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 	"sort"
-	 
-	
 )
 
 //closure function
@@ -144,6 +143,9 @@ fmt.Println("slices1 sort value",slice_1);
 //append slice 
 slice_1=append(slice_1,20);
 fmt.Println("slices1 append value",slice_1);
+
+//compare two arr 
+fmt.Println("compare two arr",reflect.DeepEqual(slice_1,slice_2));
 
 }
 
