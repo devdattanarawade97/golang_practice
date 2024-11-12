@@ -115,6 +115,15 @@ fmt.Println("struct value",record)
 int_arr:=make([]int,5,10);
 fmt.Println("int array value",int_arr)
 
+
+//2d slices 
+double_array_slices:=[][]int{
+	{1,2,3},
+	{4,5,6},
+	{7,8,9},
+};
+
+fmt.Println("2d slices value",double_array_slices)
 }
 
 //argument list function
