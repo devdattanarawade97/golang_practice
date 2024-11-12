@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	 
 	
 )
@@ -128,13 +129,21 @@ double_array_slices:=[][]int{
 fmt.Println("2d slices value",double_array_slices)
 
 //copy
-slice_2:=[]int {1,2,3,4,5};
+slice_2:=[]int {5,20,4};
 slice_1 := make([]int, len(slice_2))
 
 copy(slice_1,slice_2);
 
 fmt.Println("slices2 copy value",slice_2);
 fmt.Println("slices1 copy value",slice_1);
+
+//sort arr
+sort.Ints(slice_1);
+fmt.Println("slices1 sort value",slice_1);
+
+//append slice 
+slice_1=append(slice_1,20);
+fmt.Println("slices1 append value",slice_1);
 
 }
 
