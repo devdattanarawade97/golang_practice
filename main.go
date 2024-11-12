@@ -95,6 +95,26 @@ fmt.Println("array value",arr)
 //elipsis 
 var elipsis_arr =[...]int{1,2,3,4,5};
 fmt.Println("elipsis array value",elipsis_arr)
+
+//struct array 
+record:=[]struct {
+	name string
+	age int
+}{
+	{
+		name:"hello",
+		age:10,
+	},
+
+}
+
+fmt.Println("struct value",record)
+
+
+//arr using make arr
+int_arr:=make([]int,5,10);
+fmt.Println("int array value",int_arr)
+
 }
 
 //argument list function
@@ -115,3 +135,5 @@ func sum(a int , b int) int {
 func minus(a *int , b *int) int {			
 
 	return *a-*b}
+
+
