@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 	"sort"
+	"strings"
 )
 
 //closure function
@@ -161,6 +162,20 @@ for i, char := range string_var {
 var string_var_1 string=`hello_
 1`;
 fmt.Println("string value",string_var_1)
+
+
+//rune 
+rune_arr:=[]rune(string_var_1);
+fmt.Println("rune arr",rune_arr);
+rune_arr[0]='a';
+str:=string(rune_arr);
+fmt.Println("str",str);
+
+
+upperStr := strings.ToUpper(string_var_1)
+fmt.Println(upperStr)
+fp:=fmt.Println;
+fp(strings.Count(string_var_1,"l"));
 }
 
 //argument list function
