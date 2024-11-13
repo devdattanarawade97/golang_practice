@@ -147,6 +147,20 @@ fmt.Println("slices1 append value",slice_1);
 //compare two arr 
 fmt.Println("compare two arr",reflect.DeepEqual(slice_1,slice_2));
 
+
+//string 
+var string_var string="hello";
+fmt.Println("string value",string_var)
+
+//iterate over string
+for i, char := range string_var {
+	fmt.Printf("Character at index %d: %c\n", i, char)
+}
+
+//string 
+var string_var_1 string=`hello_
+1`;
+fmt.Println("string value",string_var_1)
 }
 
 //argument list function
