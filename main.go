@@ -204,6 +204,10 @@ var student_1 struct {
 fmt.Println("struct value",student_1)
 
 
+//map 
+map_1:=map[string]int{};
+map_1["hello"]=10;
+fmt.Println("map value",map_1);
 }
 
 
