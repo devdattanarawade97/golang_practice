@@ -176,6 +176,40 @@ upperStr := strings.ToUpper(string_var_1)
 fmt.Println(upperStr)
 fp:=fmt.Println;
 fp(strings.Count(string_var_1,"l"));
+
+
+//pointer change value
+str_value:="baby";
+pointer:=&str_value;
+fmt.Println("pointer value",*pointer);
+change_value(pointer);
+fmt.Println("pointer value after modification",*pointer);
+
+
+//struct 
+type student struct {
+	name string
+	age int
+}
+var student_1 struct {
+	name string
+	age int
+}
+ student_1.name="hello";
+ student_1.age=10;
+ student_2:=student{"hello",10};
+
+ fmt.Println("struct value",student_2)
+
+fmt.Println("struct value",student_1)
+
+
+}
+
+
+func change_value(a *string){
+
+	*a="hello world";
 }
 
 //argument list function
