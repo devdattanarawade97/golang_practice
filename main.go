@@ -206,11 +206,31 @@ fmt.Println("struct value",student_1)
 
 //map 
 map_1:=map[string]int{};
+map_2:=make(map[string]int);
+map_2["hello"]=10;
+
 map_1["hello"]=10;
 fmt.Println("map value",map_1);
+
+//compare map
+fmt.Println("compare map",reflect.DeepEqual(map_1,map_2));
+
+//call range
+call_1_to_10(1);
+fmt.Println("range function called")
+
 }
 
 
+
+func call_1_to_10(a int) int {
+
+	for a<11 {
+		fmt.Println(a)
+		a++
+	}
+	return a
+}
 func change_value(a *string){
 
 	*a="hello world";
